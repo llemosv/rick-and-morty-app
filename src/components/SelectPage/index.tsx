@@ -5,7 +5,7 @@ export function SelectPage() {
     const { currentPage } = usePage();
 
     return (
-        <div className="flex bg-rickLight-200 shadow-md rounded-xl overflow-hidden dark:bg-gray-900 dark:text-slate-50">
+        <div className="flex bg-rickLight-200 shadow-md rounded-xl overflow-hidden dark:bg-rickDark-300 dark:text-slate-50">
             <Link
                 to="/characters"
                 className={`min-w-[10rem] text-center p-3 cursor-pointer hover:bg-rickLight-300 dark:hover:bg-rickDark-100 ${currentPage === '/characters' ? 'border-b-4 bg-rickLight-300 border-rickLight-500 dark:bg-rickDark-100 dark:border-mortyLight-500' : ''
