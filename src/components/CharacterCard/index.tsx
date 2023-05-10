@@ -41,7 +41,8 @@ export function CharacterCard(props: CharacterProps) {
                                 ? "Espécie desconhecida"
                                 : props.species === "Human"
                                     ? "Humano(a)"
-                                    : props.species}
+                                    : props.species
+                            }
                         </p>
                     </div>
 

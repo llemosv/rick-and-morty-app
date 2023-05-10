@@ -42,9 +42,9 @@ export function Episodes() {
             const res = await fetch(
                 `https://rickandmortyapi.com/api/episode/?page=${pageNumber}`
             );
-            const newCharacterPageList = await res.json();
+            const data = await res.json();
 
-            setEpisodes(newCharacterPageList);
+            setEpisodes(data);
         } catch (error) {
             console.log(error);
         } finally {
