@@ -1,4 +1,4 @@
-import { Globe, Info, MonitorPlay, Planet } from "@phosphor-icons/react";
+import { Globe, Info, Planet } from "@phosphor-icons/react";
 
 interface EpisodesCardProps {
     name: string;
