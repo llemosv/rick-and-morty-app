@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-rickLight-100 dark:bg-rickDark-200 text-rickLight-900 dark:text-rickLight-200;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  @apply m-0 p-0 outline-0 decoration-0 box-border;
+  font-size: 14px;
+}
+
+button:disabled {
+  @apply cursor-not-allowed;
+}
+
+::-webkit-scrollbar {
+  @apply bg-rickLight-300 h-2 w-2;
+}
+.dark ::-webkit-scrollbar {
+  @apply bg-mortyLight-400 h-2 w-2;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-rickLight-600 rounded-lg;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  @apply bg-mortyLight-600 rounded-lg;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-rickLight-700 rounded-lg transition duration-200;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  @apply bg-mortyLight-700 rounded-lg transition duration-200;
+}
+
+:root {
+  --transition-duration: 200ms;
+}
+
+:where([class*="bg-"]) {
+  transition-property: background-color, color;
+  transition-duration: var(--transition-duration);
+}
+
+:where([class*="text-"]) {
+  transition-property: color;
+  transition-duration: var(--transition-duration);
+}
