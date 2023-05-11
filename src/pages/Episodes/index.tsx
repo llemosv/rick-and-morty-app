@@ -96,13 +96,13 @@ export function Episodes() {
 
     return (
         <LayoutPage>
-            <div className="w-full flex flex-col gap-5 items-center md:flex-row md:justify-between mt-8 px-2">
+            <div className="w-full flex flex-col gap-7 items-center md:flex-row md:justify-between mt-8 px-2">
                 <SearchFilter text={textFilter} handleFilter={handleFilter} />
                 <SelectPage />
             </div>
 
 
-            <section className="h-full w-full flex justify-center items-center flex-wrap gap-5 py-20 px-0">
+            <section className="h-full w-full flex justify-center items-center flex-wrap gap-5 py-11 md:py-20 px-0">
                 {episodes?.results
                     ? (
                         episodes.results.map(item => {
