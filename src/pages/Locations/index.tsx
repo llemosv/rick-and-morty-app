@@ -97,7 +97,7 @@ export function Locations() {
 
     return (
         <LayoutPage>
-            <div className="w-full flex justify-between items-end mt-8 px-2">
+            <div className="w-full flex flex-col gap-5 items-center md:flex-row md:justify-between mt-8 px-2">
                 <SearchFilter text={textFilter} handleFilter={handleFilter} />
                 <SelectPage />
             </div>
